@@ -71,7 +71,7 @@ Aplicación de escritorio WPF en C# para experimentar y comparar el rendimiento 
 ## Instalación
 
 1. Clona este repositorio.
-2. Abre la solución `MultithreadedEncryptionApp.sln` en Visual Studio.
+2. Abre la solución `proyectPP_app.sln` en Visual Studio.
 3. Restaura los paquetes NuGet si es necesario.
 4. Compila y ejecuta la aplicación.
 
