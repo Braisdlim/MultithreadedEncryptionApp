@@ -1,0 +1,36 @@
+﻿<Window x:Class="MultithreadedEncryptionApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Multithreaded Encryption App" Height="300" Width="400">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="265.5"/>
+            <ColumnDefinition Width="9.5"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Columna izquierda -->
+        <StackPanel Grid.Column="0" Margin="0,10,10,10">
+            <TextBlock Text="Original Message:"/>
+            <TextBox x:Name="OriginalTextBox" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" 
+                     AcceptsReturn="True" Margin="0,0,0,10" Height="48" Width="255"/>
+
+            <TextBlock Text="Encrypted Message:"/>
+            <TextBox x:Name="EncryptedTextBox" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" 
+                     AcceptsReturn="True" Margin="0,0,0,10" Height="51"/>
+
+            <TextBlock Text="Decrypted Message:"/>
+            <TextBox x:Name="DecryptedTextBox" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" 
+                     AcceptsReturn="True" Margin="0,0,0,10" Height="65"/>
+        </StackPanel>
+
+        <!-- Columna derecha -->
+        <StackPanel Grid.Column="2" Margin="7,10,0,10" HorizontalAlignment="Left" Width="108">
+            <Button x:Name="EncryptButton" Content="Encrypt" Margin="0,0,0,10"/>
+            <Button x:Name="DecryptButton" Content="Desencrypt" Margin="0,0,0,10"/>
+            <Button x:Name="CancelButton" Content="Cancel" Margin="0,0,0,10"/>
+            <TextBlock Text="Execution Time:" Margin="0,10,0,5"/>
+            <TextBox x:Name="ExecutionTimeTextBox" IsReadOnly="True" Margin="0,0,0,10" Height="20" Width="108"/>
+        </StackPanel>
+    </Grid>
+</Window>
